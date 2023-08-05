@@ -10,3 +10,15 @@ npm-debug.log*
 # OS metadata
 .DS_Store
 Thumbs.db
+
+# nyc test coverage
+.nyc_output
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache

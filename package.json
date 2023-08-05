@@ -1,16 +1,20 @@
 {
   "name": "fastify-seqpg",
   "version": "1.0.1",
-  "description": "",
+  "description": "Fastity Sequelize Plugin",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "https://github.com/shijin-p",
   "license": "ISC",
   "repository": {
     "type": "git",
     "url": "https://github.com/shijin-p/fastify-seqpg"
+  },
+  "devDependencies": {
+    "standard": "^17.1.0",
+    "tap": "^16.3.8"
   }
 }
