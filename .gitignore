@@ -22,3 +22,6 @@ Thumbs.db
 
 # Optional eslint cache
 .eslintcache
+
+# lock files
+package-lock.json
