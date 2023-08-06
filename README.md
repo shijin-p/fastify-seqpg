@@ -1,5 +1,5 @@
 ## fastify-seqpg
-Fastity plugin with Sequelize (optimized for NodeJS - Posgres)
+Fastity Sequelize Plugin (optimized for NodeJS - Fastify - Sequelize - Postgres)
 
 ### install
 ```bash
