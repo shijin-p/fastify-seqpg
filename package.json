@@ -3,18 +3,44 @@
   "version": "1.0.1",
   "description": "Fastity Sequelize Plugin",
   "main": "index.js",
+  "type": "module",
+  "types": "types/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "standard --verbose | snazzy",
+    "test": "npm run test:unit && npm run test:typescript",
+    "test:typescript": "tsd",
+    "test:unit": "tap",
+    "test:unit:report": "npm run test:unit -- --coverage-report=html",
+    "test:unit:verbose": "npm run test:unit -- -Rspec"
   },
-  "keywords": [],
+  "keywords": [
+    "fastify",
+    "fastify-plugin",
+    "postgres",
+    "postgresql",
+    "database",
+    "connection",
+    "sequelize",
+    "sql"
+  ],
   "author": "https://github.com/shijin-p",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/shijin-p/fastify-seqpg"
   },
   "devDependencies": {
+    "fastify": "^4.21.0",
+    "snazzy": "^9.0.0",
     "standard": "^17.1.0",
-    "tap": "^16.3.8"
+    "tap": "^16.3.8",
+    "tsd": "^0.28.1"
+  },
+  "precommit": [
+    "lint",
+    "test"
+  ],
+  "dependencies": {
+    "fastify-plugin": "^4.5.1"
   }
 }
